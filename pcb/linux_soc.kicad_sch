@@ -736,10 +736,28 @@
 		)
 	)
 	(junction
+		(at 58.42 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08cd030e-f36f-46b4-99d6-0d8130fe49bc")
+	)
+	(junction
 		(at 24.13 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e4aecce-4ffd-4026-89ba-c3dced70ebde")
+	)
+	(junction
+		(at 62.23 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b778c65-febf-4abc-ac21-57dbffefbbbf")
+	)
+	(junction
+		(at 66.04 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dec626a8-21d0-4c27-98d9-215aab131b36")
 	)
 	(wire
 		(pts
@@ -750,6 +768,16 @@
 			(type default)
 		)
 		(uuid "00c1133b-84f3-426b-9f97-494725baece4")
+	)
+	(wire
+		(pts
+			(xy 58.42 74.93) (xy 58.42 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "021b5b76-c0d0-42eb-9b8a-dc163dcc2053")
 	)
 	(wire
 		(pts
@@ -793,6 +821,26 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 77.47) (xy 74.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d0fa0fa-118d-43ca-9d0c-5cd249fa5fc2")
+	)
+	(wire
+		(pts
+			(xy 58.42 67.31) (xy 58.42 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e071946-102e-45f2-a03e-06ca6aa20e0e")
+	)
+	(wire
+		(pts
 			(xy 20.32 68.58) (xy 20.32 67.31)
 		)
 		(stroke
@@ -800,6 +848,26 @@
 			(type default)
 		)
 		(uuid "400addb3-290e-4603-b977-cbbec81b2f1d")
+	)
+	(wire
+		(pts
+			(xy 66.04 66.04) (xy 66.04 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41b116b6-d12e-4a55-8012-9589d65340ae")
+	)
+	(wire
+		(pts
+			(xy 62.23 64.77) (xy 62.23 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f5db9f-883b-4b62-ba61-18447160ee60")
 	)
 	(wire
 		(pts
@@ -833,7 +901,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 77.47) (xy 67.31 77.47)
+			(xy 58.42 66.04) (xy 62.23 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5981ee9f-0f0d-4e37-a244-123605f06256")
+	)
+	(wire
+		(pts
+			(xy 57.15 77.47) (xy 58.42 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1003,6 +1081,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 80.01) (xy 74.93 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b773c604-3857-4101-9a71-125b62924755")
+	)
+	(wire
+		(pts
 			(xy 57.15 85.09) (xy 67.31 85.09)
 		)
 		(stroke
@@ -1093,6 +1181,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 66.04) (xy 66.04 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3461614-4182-437e-a8de-35f3c0319e58")
+	)
+	(wire
+		(pts
 			(xy 116.84 83.82) (xy 127 83.82)
 		)
 		(stroke
@@ -1113,13 +1211,23 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 80.01) (xy 67.31 80.01)
+			(xy 57.15 80.01) (xy 66.04 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f2afa5ca-12bb-4a5d-b943-438bea243024")
+	)
+	(wire
+		(pts
+			(xy 66.04 74.93) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4bf74a0-3e9b-49f6-acc8-275f2e30e363")
 	)
 	(label "SPI_SCK"
 		(at 116.84 35.56 0)
@@ -1142,7 +1250,7 @@
 		(uuid "1098d14f-5569-4283-9d48-4282fd0795a6")
 	)
 	(label "I2C_SCL"
-		(at 67.31 77.47 180)
+		(at 74.93 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1152,7 +1260,7 @@
 		(uuid "19d45481-32cf-4ba5-b4d7-12cae24f91e6")
 	)
 	(label "I2C_SDA"
-		(at 67.31 80.01 180)
+		(at 74.93 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1272,16 +1380,6 @@
 		(uuid "73ec3dd6-4a14-43d3-bac5-5fc2c4915374")
 	)
 	(label "SPI_MOSI"
-		(at 116.84 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7458a5aa-b0e7-4a31-8986-b8439aa49f40")
-	)
-	(label "SPI_MOSI"
 		(at 116.84 83.82 0)
 		(effects
 			(font
@@ -1290,6 +1388,16 @@
 			(justify left bottom)
 		)
 		(uuid "7f3f5949-39db-4e7b-b01f-06351a02245f")
+	)
+	(label "SPI_DAISY"
+		(at 116.84 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "929162d8-dcb4-485e-aaf1-050b94a43be5")
 	)
 	(label "I2C_SCL"
 		(at 116.84 38.1 0)
@@ -1320,6 +1428,16 @@
 			(justify left bottom)
 		)
 		(uuid "c1dcc8bb-a8e0-45ba-9f47-a440ef2955d7")
+	)
+	(label "SPI_DAISY"
+		(at 116.84 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbab8b3f-beb5-4101-ae19-4477d3c848ee")
 	)
 	(label "UART_TX"
 		(at 116.84 86.36 0)
@@ -1361,16 +1479,6 @@
 		)
 		(uuid "f5bc2749-4f7e-4c1f-a91e-fc5e7a92a140")
 	)
-	(label "SPI_MISO"
-		(at 116.84 81.28 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fa97bdb4-15eb-4658-a9f6-90552fe6d6ba")
-	)
 	(label "SPI_MOSI"
 		(at 67.31 87.63 180)
 		(effects
@@ -1380,6 +1488,121 @@
 			(justify right bottom)
 		)
 		(uuid "fcef06e6-6db1-4309-84de-24c6b6757afe")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 58.42 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "000dc67a-1b0d-4ee4-bcf3-0b3b89841bff")
+		(property "Reference" "R19"
+			(at 60.96 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 60.96 72.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 56.642 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 58.42 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC#" ""
+			(at 58.42 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 58.42 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 58.42 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f84e8f9c-eccf-4104-9df6-a17e8c8485f2")
+		)
+		(pin "1"
+			(uuid "319f6f56-a8ea-4452-a071-04ed7eb8e0da")
+		)
+		(instances
+			(project "linux_soc"
+				(path "/3110ed2d-1365-46c2-882a-276fac3c0cba"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -1997,6 +2220,199 @@
 			(project "linux_soc"
 				(path "/3110ed2d-1365-46c2-882a-276fac3c0cba"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 66.04 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1d4316c-4dec-4bfc-b31c-a7ce4948bdbc")
+		(property "Reference" "R20"
+			(at 68.58 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 68.58 72.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 64.262 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 66.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC#" ""
+			(at 66.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 66.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 66.04 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "655426af-0b73-4cc8-b8a6-3201ff4846ad")
+		)
+		(pin "1"
+			(uuid "5905101f-120b-4385-8acc-8925bab33938")
+		)
+		(instances
+			(project "linux_soc"
+				(path "/3110ed2d-1365-46c2-882a-276fac3c0cba"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 62.23 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c54c06a6-d5af-4850-8fa6-0742924073f2")
+		(property "Reference" "#PWR045"
+			(at 62.23 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 62.23 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 62.23 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55884c9c-162f-4b59-a547-c592b7d405e8")
+		)
+		(instances
+			(project "linux_soc"
+				(path "/3110ed2d-1365-46c2-882a-276fac3c0cba"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
