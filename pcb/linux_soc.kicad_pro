@@ -542,7 +542,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "linux_soc.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
