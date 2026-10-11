@@ -1800,7 +1800,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C93943"
 			(at 85.09 86.36 0)
 			(hide yes)
 			(show_name no)

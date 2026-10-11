@@ -4153,6 +4153,17 @@
 				)
 			)
 		)
+		(property "LCSC#" "C2651959"
+			(at 91.44 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "21"
 			(uuid "b59ee310-1f1b-4a6f-bdbc-e80f1c0ae92a")
 		)
@@ -4350,7 +4361,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "12p"
 			(at 49.53 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4394,7 +4405,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C26406"
 			(at 53.34 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4502,6 +4513,17 @@
 		)
 		(property "Description" "High-Speed USB serial converter, up to 6Mbps, 3.3V or 5V supply, UART, QFN-16"
 			(at 179.07 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC#" "C2846043"
+			(at 142.24 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4942,7 +4964,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "12p"
 			(at 69.85 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4986,7 +5008,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C26406"
 			(at 66.04 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5179,7 +5201,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C1525"
 			(at 149.86 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -5469,7 +5491,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C7303340"
 			(at 59.69 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5566,7 +5588,7 @@
 				)
 			)
 		)
-		(property "LCSC#" "C165948"
+		(property "LCSC#" "C7450621"
 			(at 233.68 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5723,7 +5745,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C105872"
 			(at 255.27 44.45 90)
 			(hide yes)
 			(show_name no)
@@ -6463,7 +6485,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C1525"
 			(at 135.89 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6578,7 +6600,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C1525"
 			(at 88.9 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6693,7 +6715,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C1525"
 			(at 77.47 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6884,7 +6906,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C105872"
 			(at 255.27 41.91 90)
 			(hide yes)
 			(show_name no)
@@ -6998,7 +7020,7 @@
 				)
 			)
 		)
-		(property "LCSC#" ""
+		(property "LCSC#" "C1525"
 			(at 148.59 44.45 0)
 			(hide yes)
 			(show_name no)
