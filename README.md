@@ -25,3 +25,16 @@ The pcb consist of 4 layers for better power management and routing, it was othe
 The case was made in onshape. Here is the public link to access the document [link](https://cad.onshape.com/documents/23acd3255b900cc5b85fa1fc/w/7ef244823df79fb773706f50/e/0ac388d0a99e7c2b0060239b?renderMode=0&uiState=6abee2b1fc9f4045824befa1) The case itself was made pretty complex also because of the complexity of the board, with no space for mouthing holes i had to resort to mounting it by clips.
 <img width="1343" height="778" alt="image" src="https://github.com/user-attachments/assets/2db58911-be35-45c0-90b5-0ce3eacb3743" />
 <img width="1343" height="778" alt="image" src="https://github.com/user-attachments/assets/d08a110d-9cdf-4725-b2a0-f4903feea3d2" />
+
+## Software
+
+- `firmware/` — Hackxpansion console driver (`linux-soc-driver`, Embassy /
+  `xpanse-api` on the RP2354). Opens the Linux terminal UART (console GPIO5/6
+  at 115200 8N1) and registers a `LinuxSocHandle` for apps. Build with
+  `cargo build` in `firmware/` (defaults to the RP2354 target).
+  See `firmware/README.md`.
+- `linux/` — Mainline U-Boot + Linux for the onboard F1C100s with console on
+  UART0 (`ttyS0`, 115200 8N1, PE0/PE1 -> J1 P10/P11). Board DTS
+  `suniv-f1c100s-linux_soc.dts`, `boot.cmd`, kernel fragment and `build.sh`
+  (U-Boot `licheepi_nano_defconfig` + Linux `multi_v5_defconfig`).
+  See `linux/README.md`.

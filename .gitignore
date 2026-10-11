@@ -1,2 +1,10 @@
 
 pcb/.history
+# Console driver build outputs (library crate)
+firmware/target/
+firmware/Cargo.lock
+# Linux build outputs (cloned trees + images)
+linux/u-boot/
+linux/linux/
+linux/boot.scr
+linux/*.img

@@ -1,0 +1,72 @@
+// Device tree for the linux_soc board (Allwinner F1C100s).
+// UART console: UART0 on PE0/PE1 -> J1 P10/P11, 115200 8N1.
+//
+// Based on mainline suniv-f1c100s.dtsi + the licheepi-nano reference
+// (linux/arch/arm/boot/dts/allwinner/suniv-f1c100s-licheepi-nano.dts).
+// Installed by build.sh into linux/arch/arm/boot/dts/allwinner/ and built
+// with multi_v5_defconfig (ARMv5 base; sunxi_defconfig cannot build suniv).
+//
+// Wiring verified from pcb/*.kicad_sch:
+//   CPU.UART0_TX/RX -> top UART0_TX/RX -> J1.UART_TX/RX (pins 10/11)
+//   SoC pins PE0/PE1, pinctrl uart0_pe_pins (func 5), base 0x01C25000.
+//   SD card on MMC0 (standard PF0-PF5), USB D+/D- to USB-C.
+//   24MHz crystal (HOSCI/HOSCO), 32MB stacked DDR1 at 0x80000000.
+
+/dts-v1/;
+#include "suniv-f1c100s.dtsi"
+
+/ {
+	model = "linux_soc (F1C100s)";
+	compatible = "linux-soc,linux-soc", "allwinner,suniv-f1c100s";
+
+	aliases {
+		mmc0 = &mmc0;
+		serial0 = &uart0;
+	};
+
+	chosen {
+		stdout-path = "serial0:115200n8";
+		bootargs = "console=ttyS0,115200 earlycon=uart,mmio32,0x01c25000 console=tty0 root=/dev/mmcblk0p2 rootwait rw";
+	};
+
+	memory@80000000 {
+		device_type = "memory";
+		reg = <0x80000000 0x2000000>; /* 32M */
+	};
+};
+
+&uart0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart0_pe_pins>;
+	status = "okay";
+};
+
+/* SD card slot (SD_CARD.kicad_sch: DAT0-3, CMD, CLK on MMC0/PF).
+ * No card-detect pin is wired on this board, so poll like licheepi-nano
+ * instead of guessing a cd-gpios pin (a wrong guess can hang boot). */
+&mmc0 {
+	broken-cd;
+	bus-width = <4>;
+	disable-wp;
+	status = "okay";
+};
+
+/* USB OTG (CPU.kicad_sch: USB D+/D-). suniv has a single musb OTG
+ * controller + phy, no EHCI/OHCI blocks. */
+&otg_sram {
+	status = "okay";
+};
+
+&usb_otg {
+	dr_mode = "otg";
+	status = "okay";
+};
+
+&usbphy {
+	status = "okay";
+};
+
+/* SPI0 goes to the J1 edge / ATmega daisy chain; enable when needed. */
+&spi0 {
+	status = "disabled";
+};

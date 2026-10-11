@@ -1,0 +1,16 @@
+[package]
+name = "linux-soc-driver"
+version = "0.1.0"
+edition = "2024"
+description = "Hackxpansion driver for the linux_soc F1C100s module (Linux terminal over UART)"
+license = "MIT"
+repository = "https://github.com/simon/linux_soc"
+
+[lib]
+name = "linux_soc_driver"
+path = "src/lib.rs"
+
+[dependencies]
+xpanse-api = "0.2"
+embedded-io-async = "0.7"
+heapless = "0.9"
