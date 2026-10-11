@@ -38,3 +38,12 @@ The case was made in onshape. Here is the public link to access the document [li
   `suniv-f1c100s-linux_soc.dts`, `boot.cmd`, kernel fragment and `build.sh`
   (U-Boot `licheepi_nano_defconfig` + Linux `multi_v5_defconfig`).
   See `linux/README.md`.
+
+
+## BOM
+
+| Place | Cost |
+|-------|------|
+| LCSC | $72.61 |
+| JLCPCB | $10.36 |
+| **Total** | **$82.97** |
